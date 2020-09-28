@@ -1,0 +1,61 @@
+$h6Color: #757575;
+$light-text: #ffffff;
+
+@mixin center-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+h6{
+    color : $h6Color;
+    @include center-content();
+}
+
+button {
+  border: none;
+  margin-bottom : 3%;
+  text-align : left;
+  padding-right : 3%;
+  padding-left: 3%;
+  padding-top:2%;
+  padding-bottom:2%;
+  border-radius : 5%;
+}
+
+.country{
+    @include center-content();
+    width : 55%;
+}
+
+.region{
+  @include center-content();
+  width : 45%;
+  color : $light-text;
+}
+
+.country-details{
+    padding-left :3%;
+    padding-right : 3%;
+    border-radius: 5%;
+    font-weight: 600;
+}
+
+.flag{
+    float:right;
+    margin-top  : 4%;
+    width : 10%;
+}
+
+.center{
+    @include center-content();
+    text-align: center;
+}
+
+.card{
+    margin-top : 2%;
+    margin-bottom : 2%;
+}
+
+.container{
+    padding-top:5%;
+}
